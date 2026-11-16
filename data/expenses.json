@@ -1,5 +1,30 @@
 [
-  { "id": "1", "title": "Weekly Groceries", "amount": 64.2, "category": "Food", "date": "2026-10-02" },
-  { "id": "2", "title": "Bus pass", "amount": 45, "category": "Transport", "date": "2026-10-01" },
-  { "id": "3", "title": "Rent", "amount": 850, "category": "Bills", "date": "2026-10-01" }
+  {
+    "id": "1",
+    "title": "Weekly Groceries",
+    "amount": 64.2,
+    "category": "Food",
+    "date": "2026-10-02"
+  },
+  {
+    "id": "2",
+    "title": "Bus pass",
+    "amount": 45,
+    "category": "Transport",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "3",
+    "title": "Rent",
+    "amount": 850,
+    "category": "Bills",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "2ecb7210-ca8f-467d-9b46-7e8adf39a943",
+    "title": "GTA6",
+    "amount": 99.97,
+    "category": "Fun",
+    "date": "2026-11-19"
+  }
 ]
