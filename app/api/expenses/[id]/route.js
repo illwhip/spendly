@@ -5,7 +5,7 @@ export async function PATCH(request, { params }) {
   const { id } = await params;
   const data = await request.json()
 
-  const error = validateExpense()
+  const error = validateExpense(data)
   if (error) {
     return Response.json({ error: "Expense not found."}, { status: 404 })
   }
