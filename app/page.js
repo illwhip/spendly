@@ -1,6 +1,7 @@
 import { getExpenses } from "@/lib/expenses"
 import { formatMoney, sum } from "@/lib/helpers"
 import Link from "next/link"
+import DeleteButton from "@/components/DeleteButton"
 
 export default async function HomePage() {
   const expenses = await getExpenses()
@@ -17,13 +18,17 @@ export default async function HomePage() {
           <p className="total">{formatMoney(sum(expenses))}</p>
         </div>
         <ul className="expenses-list">
-          {expenses.map((expenses) => (
-            <li key={expenses.id} className="expense">
+          {expenses.map((expense) => (
+            <li key={expense.id} className="expense">
               <div>
-                <p className="expense-title">{expenses.title}</p>
-                <p className="muted">{expenses.category} · {expenses.date}</p>
+                <p className="expense-title">{expense.title}</p>
+                <p className="muted">{expense.category} · {expense.date}</p>
               </div>
-              <p className="expense-amount">{formatMoney(expenses.amount)}</p>
+              <p className="expense-amount">{formatMoney(expense.amount)}</p>
+              <div className="expense-actions">
+                <Link href={`/expenses/${expense.id}/edit`}>Edit</Link>
+                <DeleteButton id={expense.id} />
+              </div>
             </li>
           ))}
         </ul>
