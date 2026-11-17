@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <nav className="nav">
           <Link href="/" className="logo">Spendly</Link>
           <Link href="/" >Expenses</Link>
-          <Link href="/" >Reports</Link>
+          <Link href="/reports" >Reports</Link>
         </nav>
         {children}</body>
     </html>
