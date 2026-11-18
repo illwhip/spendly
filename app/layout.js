@@ -21,7 +21,8 @@ export default function RootLayout({ children }) {
           <Link href="/" >Expenses</Link>
           <Link href="/reports" >Reports</Link>
         </nav>
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
